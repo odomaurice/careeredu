@@ -34,27 +34,27 @@
     }
 
     .item-bg1 {
-        background-image: url(../build/assets/images/feature_img1.jpg);
+        background-image: url(/build/assets/images/feature_img1.jpg);
     }
 
     .item-bg2 {
-        background-image: url(../build/assets/images/feature_img2.jpg);
+        background-image: url(/build/assets/images/feature_img2.jpg);
     }
 
     .item-bg3 {
-        background-image: url(../build/assets/images/feature_img3.png);
+        background-image: url(/build/assets/images/feature_img3.png);
     }
 
     .item-bg4 {
-        background-image: url(../build/assets/images/feature_img4.png);
+        background-image: url(/build/assets/images/feature_img4.png);
     }
 
     .item-bg5 {
-        background-image: url(../build/assets/images/feature_img5.png);
+        background-image: url(/build/assets/images/feature_img5.png);
     }
 
     .item-bg6 {
-        background-image: url(../build/assets/images/feature_img6.jpg);
+        background-image: url(/build/assets/images/feature_img6.jpg);
     }
 
     .hero-text {
