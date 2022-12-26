@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="CareerEdu is yout launchpad to global opportunities! Get free information about relocating abroad for studies or work, guidance on career opportunities in Nigeria and around the world."
+        name="description">
+    <meta content="education, relocation, free, jobs, work, opportunities, scholarship" name="keywords">
+    <meta name="a.validate.02" content="bnTb3qC7MY1l2TQLhUmCT-P1hG3EuIZruAWa" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7013821624704351"
+        crossorigin="anonymous"></script>
+
+    <!-- SITE FAVICON -->
+    <link href="assets/images/preg(1).png" rel="icon">
+    <link href="assets/images/preg.png" rel="apple-touch-icon">
+    <title>CareerEdu</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- EXTERNAL FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS CAROUSEL  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <script src="js/script.js" defer></script>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: rgb(70, 53, 200);
+            text-align: center;
+            padding: 20px 5px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropbtn:hover .dropbtn {
+            color: indigo;
+            text-decoration: none;
+            border-bottom: 0.2rem solid indigo;
+            padding: 0.5rem rem;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .dropdown-content a {
+            color: rgb(70, 53, 200);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero-slider {
+            position: relative;
+        }
+
+        .single-hs-item {
+            height: 500px;
+            margin: 1rem;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .single-hs-item:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #000;
+            opacity: 0.6;
+            border-radius: 15px;
+        }
+
+
+
+        .hero-text {
+            padding: 0 15px;
+            text-align: justify;
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: baseline;
+            text-align: justify;
+            line-height: 1;
+
+
+
+        }
+
+        .item-bg1 {
+            background-image: url(/build/assets/images/tobi.jpg);
+        }
+
+        .item-bg2 {
+            background-image: url(/build/assets/images/preg.png);
+        }
+
+        .item-bg3 {
+            background-image: url(/build/assets/images/emmanuel.jpg);
+        }
+
+        .item-bg4 {
+            background-image: url(/build/assets/images/preg.png);
+        }
+
+        .item-bg5 {
+            background-image: url(/build/assets/images/dennis.jpg);
+        }
+
+
+
+        .hero-text h3 {
+            color: #fff;
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-top: 4rem;
+
+        }
+
+        .hero-text p {
+            color: #fff;
+            font-size: 16px;
+            max-width: 600px;
+            margin-left: 10px;
+            margin-right: auto;
+            line-height: 2;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white font-poppins">
+    <header class="sticky top-0 z-10 bg-white dark:bg-black text-indigo-700 ">
+        <section
+            class="mx-auto my-auto flex md:flex-col xl:flex-row xl:text-3xl xl:mx-4 max-w-full items-center justify-between p-4">
+            <a href="#hero" class="mx-auto"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
+            <div>
+                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                    <div
+                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:dark:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:dark:bg-white after:transition-all after:duration-500 after:content-['']">
+                    </div>
+                </button>
+                <nav class="hidden space-x-8 text-sm font-bold md:block" aria-label="main">
+                    <ul class="flex justify-between text-center mx-auto my-6">
+                        <li class="mx-1"><a href="index.html" class="hover:opacity-90">Home</a></li>
+                        <li class="mx-1"><a href="about.html" class="hover:opacity-90">About</a></li>
+                        <li class="mx-1"><a href="events.html" class="hover:opacity-90">Events</a></li>
+                        <li class="mx-1 dropdown"><a href="oppurtunities"
+                                class="hover:opacity-90 dropbtn">Oppurtunities <i
+                                    class="fas fa-chevron-down hover:transition-all"></i>
+                                <div class="dropdown-content">
+                                    <a href="job.html">Hot Naija Jobs</a>
+                                    <a href="scholarship.html">Scholarship</a>
+                                    <a href="services.html">Consultation</a>
+                                </div>
+                            </a></li>
+
+                        <li class="mx-1"><a href="services.html" class="hover:opacity-90">Services</a></li>
+                        <li class="mx-1"><a href="blog.html" class="hover:opacity-90">Blog</a></li>
+                        <li class="mx-1"><a href="press.html" class="hover:opacity-90">CareerEdu and the press</a></li>
+                        <li class="mx-1 dropdown"><a href="#relocation" class="hover:opacity-90 dropbtn ">Relocation &
+                                Consultation <i class="fas fa-chevron-down hover:transition-all"></i>
+                                <div class="dropdown-content">
+                                    <a href="work.html">Relocation to the Uk for work</a>
+                                    <a href="study.html">Relocation to the Uk for study</a>
+                                    <a href="services.html">Consultation</a>
+                                </div>
+                            </a></li>
+                        <li class="mx-1"><a href="contact.html" class="hover:opacity-90">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobile-menu"
+            class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-2xl ">
+            <nav class="flex min-h-screen flex-col items-center py-4" aria-label="mobile">
+                <ul class="flex min-h-screen flex-col items-center py-4">
+                    <li><a href="index.html" class="w-full py-6 text-center hover:opacity-90">Home</a></li>
+                    <li><a href="about.html" class="w-full py-6 text-center hover:opacity-90">About</a></li>
+                    <li><a href="events.html" class="w-full py-6 text-center hover:opacity-90">Events</a></li>
+                    <li class="w-full py-6 text-center hover:opacity-90 dropdown"><a href="#oppurtunities"
+                            class="hover:opacity-90 dropbtn">Oppurtunities <i class="fas fa-chevron-down"></i>
+                            <div class="dropdown-content">
+                                <a href="job.html">Hot Naija Jobs</a>
+                                <a href="scholarship.html">Scholarship</a>
+                                <a href="services.html">Consultation</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="services.html" class="w-full py-6 text-center hover:opacity-90">Services</a></li>
+                    <li><a href="blog.html" class="w-full py-6 text-center hover:opacity-90">Blog</a></li>
+                    <li><a href="press.html" class="w-full py-6 text-center hover:opacity-90">CareerEdu and the Press</a>
+                    </li>
+                    <li class="w-full py-6 text-center hover:opacity-90 dropdown"><a href="#relocation"
+                            class="hover:opacity-90 dropbtn">Relocation & Consultation <i
+                                class="fas fa-chevron-down"></i>
+                            <div class="dropdown-content">
+                                <a href="work.html">Relocation to the Uk for work</a>
+                                <a href="study.html">Relocation to the Uk for study</a>
+                                <a href="services.html">Consultation</a>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="contact.html" class="w-full py-6 text-center hover:opacity-90">Contact</a></li>
+                </ul>
+
+            </nav>
+        </section>
+    </header>
+
+    <section
+        class="max-h-screen w-full flex flex-col bg-indigo-700 align-middle text-center my-2 text-xl text-white dark:text-slate-400 py-6 justify-between px-auto">
+        <h3 class="text-2xl pb-3">Contact Us</h3>
+        <p class="px-3">Would you like to reach out to us or perhaps visit us? Simply fill out and send the contact form below or
+            just find us
+            via the map below. You can also a give us a call
+        </p>
+    </section>
+
+    <main class="max-h-screen w-full mx-auto max-w-full">
+
+        <section
+            class="widescreen:section-min-height mt-1 mb-4 scroll-mt-16  w-full sm:text-base">
+
+            <div class="w-full mx-0" data-aos="fade-up">
+                <iframe class="w-full mx-0" style="border:0;  height: 500px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40450979.64413709!2d-67.40775029999998!3d51.77085280000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d89d864743affd%3A0x157a153893ffe85c!2sCareerEdu!5e0!3m2!1sen!2sng!4v1654091175146!5m2!1sen!2sng"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+        </section>
+
+        <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+        
+
+
+
+
+    </main>
+
+    <section id=" max-h-screen"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-6 p-6 sm:flex-row">
+        <article class="sm:w-1/2 w-full mb-16">
+            <!-- <h2 class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-4xl">
+                Seize Global Opportunities Using CareerEdu
+                <span class="text-indigo-700 dark:text-indigo-300">We are eager</span>
+                To be a part of your success...
+            </h2> -->
+            <div class=" flex justify-start  align-middle  max-w-md text-justify text-xl text-slate-700 dark:text-slate-400 sm:text-left">
+                <i class="fas fa-search-location text-3xl hover:text-slate-500  text-indigo-700 text mr-4"></i> 
+                <ul class="flex flex-col">
+                   <li>Location :</li>
+                   <li class="text-slate-400 text-base">1st Floor, North Westgate House, Harlow</li>
+                   <li class="text-slate-400 text-base" >Essex, CM20 1YS</li>
+                </ul>
+               
+            </div>
+            <div
+                class="mt-4 flex justify-start  align-middle  max-w-md text-justify text-xl text-slate-700 dark:text-slate-400 sm:text-left">
+                <i class="fas fa-mail-bulk text-3xl hover:text-indigo-500  text-indigo-700 text mr-4"></i>
+                <ul class="flex flex-col">
+                    <li>Email :</li>
+                    <li class="text-slate-400 text-base">info@careeredu.co.uk</li>
+                   
+                </ul>
+            
+            </div>
+
+            <div
+                class="mt-4 flex justify-start  align-middle  max-w-md text-justify text-xl text-slate-700 dark:text-slate-400 sm:text-left">
+                <i class="fas fa-phone-alt text-3xl hover:text-indigo-500  text-indigo-700 text mr-4"></i>
+                <ul class="flex flex-col">
+                    <li>Call :</li>
+                    <li class="text-slate-400 text-base">info@careeredu.co.uk</li>
+            
+                </ul>
+            
+            </div>
+            
+    
+        </article>
+        <div id="contact" class="mt-16 w-full">
+           
+            <form action="" class="items-left mx-auto flex  flex-col gap-4 text-base sm:text-lg">
+                <div class="w-full flex justify-between mr-2 gap-4">
+               
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Name"
+                    class="w-1/2  border border-solid rounded-xl border-slate-900 p-1 text-base text-black dark:border-none sm:text-lg" />
+
+                   
+                    <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Email"
+                        class="w-1/2 rounded-xl border border-solid border-slate-900 p-2 text-base text-black dark:border-none sm:text-lg" />
+                </div>
+
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Subject"
+                    class="w-full rounded-xl border border-solid border-slate-900 p-2 text-base text-black dark:border-none sm:text-lg" />
+               
+               
+                <textarea name="message" id="message" cols="" rows="10" placeholder="Your Message" required
+                    class="w-full rounded-xl border border-solid border-slate-900 p-2 text-base text-black dark:border-none sm:text-lg"></textarea>
+                <button
+                    class="w-48 rounded-xl border border-solid border-slate-900 bg-indigo-700 p-1 text-white hover:bg-indigo-500 active:bg-indigo-500 dark:border-none">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3><img src="./assets/images/logo.png" width="250"></h3>
+                <p>
+                    1<sup>st</sup> FLoor, <br>
+                    North Westgate House, Harlow<br>
+                    Essex, CM20 1YS <br><br>
+                    <strong>Phone:</strong> +44 786 9467 057<br>
+                    <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                        data-cfemail="83eaede5ecc3e0e2f1e6e6f1e6e7f6ade0ecadf6e8">[email&#160;protected]</a><br>
+                </p>
+            </div>
+
+            <div class="box text-base">
+                <h3>Useful links</h3>
+                <a class="text-base hover:text-indigo-500" href="index.html"><i class="fas fa-chevron-circle-right"></i>
+                    Home</a>
+                <a href="about.html"><i class="fas fa-chevron-circle-right"></i> About</a>
+                <a href="services.html"><i class="fas fa-chevron-circle-right"></i> Services</a>
+                <a href="education.html"><i class="fas fa-chevron-circle-right"></i> Terms of Service</a>
+                <a href="work.html"><i class="fas fa-chevron-circle-right"></i>Privacy Policy</a>
+            </div>
+
+            <div class="box">
+                <h3>Our Services</h3>
+                <p> <a href="/pricing/">Relocation</a></p>
+                <p> <a href="/pricing/">Masterclasses</a></p>
+                <p><a href="/scholarship/">Job Searching</a></p>
+                <p><a href="https://paystack.com/buy/loverrr">LOVERRR - Dating For Career
+                        Professionals</a></p>
+
+                <div class="share text-base">
+
+                    <a href="https://www.linkedin.com/in/odo-maurice/" class="fab fa-linkedin text-base"
+                        aria-label="LinkedIn" target="_blank"></a>
+                    <a href="https://github.com/odomaurice" class="fab fa-github" aria-label="GitHub"
+                        target="_blank"></a>
+                    <a href="mailto:odomaurice501@gmail.com" class="fas fa-envelope" aria-label="Mail"
+                        target="_blank"></a>
+                    <a href="https://twitter.com/AlphaOf9ja" class="fab fa-twitter" aria-label="Twitter"
+                        target="_blank"></a>
+                    <a href="https://t.me/alphaCodez" class="fab fa-telegram-plane" aria-label="Telegram"
+                        target="_blank"></a>
+                </div>
+
+
+
+            </div>
+            <div class="text-white p-6 my-3 text-xl mx-3 footer-newsletter">
+                <h4 class="mb-6 text-2xl">Join Our Newsletter</h4>
+                <p class="px-auto text-xl mb-3">Join our Newsletter to receive daily updates on relocation, <br> job
+                    opportunities and also career growth</p>
+                <form method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                        value="JrmPZFkPgFUcgsY1xli9gV4Dwxyc9KwUDalyckJtpW6fsYZIvP0AhoubHheGIcUs">
+                    <input class="text-slate-700 mb-5  before:bg-black text-base p-3 rounded-3xl -mr-6 pr-6 w-64"
+                        type="email" name="email" required><a
+                        class="w-28 more-btn p-3  rounded-3xl bg-indigo-700  justify-start text-xl text-white hover:bg-white hover:text-indigo-500 active:bg-indigo-500 dark:border-none"
+                        href="http://" target="_blank">Subscribe</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-white text-center text-xl mt-3 py-3 mx-3">
+            <div class="copyright">
+                &copy; Copyright <strong><span>CareerEdu</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://www.studentshubng.com">The Development Team at StudentsHub.</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- JQUERY LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CAROUSEL JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayingTimeout: 1000,
+            // animateIn: "fadeIn",
+            // animateOut: "fadeOut",
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                },
+                1400: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script src="./js/purecounter.js"></script>
+
+
+    <!-- scroll top btn -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
+
+
+</body>
+
+</html>
