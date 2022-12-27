@@ -12,6 +12,8 @@
     <meta name="a.validate.02" content="bnTb3qC7MY1l2TQLhUmCT-P1hG3EuIZruAWa" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7013821624704351"
         crossorigin="anonymous"></script>
+    <!-- ANIMATE ON SCROLL CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- SITE FAVICON -->
     <link href="assets/images/preg(1).png" rel="icon">
@@ -20,7 +22,6 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- EXTERNAL FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,31 +41,55 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- MAIN JS FILE -->
+    <script src="js/main.js" defer></script>
 
-
-
-    <script src="js/script.js" defer></script>
-
+    <!-- INTERNAL STYLES FOR DROPDOWN NAV -->
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-
-        }
-
-        li {
-            float: left;
-        }
-
-        li a,
+        /* Dropdown Button */
         .dropbtn {
+            background-color: transparent;
+            /* color: white; */
+            /* padding: 2px; */
+            /* font-size: 1rem; */
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: transparent;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
             display: inline-block;
-            color: rgb(70, 53, 200);
-            text-align: center;
-            padding: 20px 5px;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            border-radius: 15px;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: indigo;
+            padding: 1rem;
             text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
         }
 
         li a:hover,
@@ -75,206 +100,118 @@
             padding: 0.5rem rem;
         }
 
-        li.dropdown {
-            display: inline-block;
-        }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: whitesmoke;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            text-align: center;
-        }
-
-        .dropdown-content a {
-            color: rgb(70, 53, 200);
-            padding: 12px 16px;
-            text-decoration: none;
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
             display: block;
-            text-align: center;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .hero-slider {
-            position: relative;
-        }
-
-        .single-hs-item {
-            height: 500px;
-            margin: 1rem;
-            background-size: cover;
-            background-position: center center;
-            position: relative;
-            border-radius: 15px;
-        }
-
-        .single-hs-item:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            background-color: #000;
-            opacity: 0.6;
-            border-radius: 15px;
-        }
-
-
-
-        .hero-text {
-            padding: 0 15px;
-            text-align: justify;
-            max-width: 1140px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: baseline;
-            text-align: justify;
-            line-height: 1;
-
-
-
-        }
-
-        .item-bg1 {
-            background-image: url(/build/assets/images/tobi.jpg);
-        }
-
-        .item-bg2 {
-            background-image: url(/build/assets/images/preg.png);
-        }
-
-        .item-bg3 {
-            background-image: url(/build/assets/images/emmanuel.jpg);
-        }
-
-        .item-bg4 {
-            background-image: url(/build/assets/images/preg.png);
-        }
-
-        .item-bg5 {
-            background-image: url(/build/assets/images/dennis.jpg);
-        }
-
-
-
-        .hero-text h3 {
-            color: #fff;
-            font-size: 2rem;
-            text-transform: capitalize;
-            font-weight: 700;
-            margin-top: 4rem;
-
-        }
-
-        .hero-text p {
-            color: #fff;
-            font-size: 16px;
-            max-width: 600px;
-            margin-left: 10px;
-            margin-right: auto;
-            line-height: 2;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
         }
     </style>
-
 </head>
 
-<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white font-poppins">
+<body class="min-h-screen w-full bg-slate-50 dark:bg-black dark:text-white font-poppins">
+
+    <!-- NAVIGATION SECTION STARTS -->
     <header class="sticky top-0 z-10 bg-white dark:bg-black text-indigo-700 ">
         <section
             class="mx-auto my-auto flex md:flex-col xl:flex-row xl:text-3xl xl:mx-4 max-w-full items-center justify-between p-4">
-            <a href="#hero" class="mx-auto"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
+            <a href="#hero" class="mx-1"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
             <div>
                 <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
                     <div
                         class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:dark:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:dark:bg-white after:transition-all after:duration-500 after:content-['']">
                     </div>
                 </button>
-                <nav class="hidden space-x-8 text-sm font-bold md:block" aria-label="main">
+                <nav class="hidden space-x-8 text-base mx-1 font-bold md:block" aria-label="main">
                     <ul class="flex justify-between text-center mx-auto my-6">
                         <li class="mx-1"><a href="index.html" class="hover:opacity-90">Home</a></li>
                         <li class="mx-1"><a href="about.html" class="hover:opacity-90">About</a></li>
                         <li class="mx-1"><a href="events.html" class="hover:opacity-90">Events</a></li>
-                        <li class="mx-1 dropdown"><a href="#oppurtunities"
-                                class="hover:opacity-90 dropbtn">Oppurtunities <i
-                                    class="fas fa-chevron-down hover:transition-all"></i>
-                                <div class="dropdown-content">
-                                    <a href="job.html">Hot Naija Jobs</a>
-                                    <a href="scholarship.html">Scholarship</a>
-                                    <a href="services.html">Consultation</a>
-                                </div>
-                            </a></li>
+                        <li class="mx-1 dropdown">
+                            <button onclick="myFunction()" class="dropbtn hover:opacity-90 mx-1">Oppurtunities <i
+                                    class="fas fa-chevron-down hover:transition-all"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="job.html">Hot Naija Jobs</a>
+                                <a href="scholarship.html">Scholarship</a>
+                                <a href="services.html">Consultation</a>
+                            </div>
+                        </li>
 
                         <li class="mx-1"><a href="services.html" class="hover:opacity-90">Services</a></li>
                         <li class="mx-1"><a href="blog.html" class="hover:opacity-90">Blog</a></li>
                         <li class="mx-1"><a href="press.html" class="hover:opacity-90">CareerEdu and the press</a></li>
-                        <li class="mx-1 dropdown"><a href="#relocation" class="hover:opacity-90 dropbtn ">Relocation &
-                                Consultation <i class="fas fa-chevron-down hover:transition-all"></i>
-                                <div class="dropdown-content">
-                                    <a href="work.html">Relocation to the Uk for work</a>
-                                    <a href="study.html">Relocation to the Uk for study</a>
-                                    <a href="services.html">Consultation</a>
-                                </div>
-                            </a></li>
+                        <li class="mx-1 dropdown">
+                            <button onclick="myFunction2()" class="dropbtn hover:opacity-90 mx-1">Relocation &
+                                Consultation <i class="fas fa-chevron-down hover:transition-all"></i></button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                <a href="work.html">Relocation to the Uk for work</a>
+                                <a href="study.html">Relocation to the Uk for study</a>
+                                <a href="services.html">Consultation</a>
+                            </div>
+                        </li>
+
                         <li class="mx-1"><a href="contact.html" class="hover:opacity-90">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
 
+        <!-- MOBILE NAVBAR -->
+
         <section id="mobile-menu"
-            class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-slate-50 text-2xl dark:bg-black ">
-            <nav class="flex min-h-screen flex-col items-center py-4" aria-label="mobile">
-                <ul class="flex min-h-screen flex-col items-center py-4">
-                    <li><a href="index.html" class="w-full py-6 text-center hover:opacity-90">Home</a></li>
-                    <li><a href="about.html" class="w-full py-6 text-center hover:opacity-90">About</a></li>
-                    <li><a href="events.html" class="w-full py-6 text-center hover:opacity-90">Events</a></li>
-                    <li class="w-full py-6 text-center hover:opacity-90 dropdown"><a href="#oppurtunities"
-                            class="hover:opacity-90 dropbtn">Oppurtunities <i class="fas fa-chevron-down"></i>
-                            <div class="dropdown-content">
-                                <a href="job.html">Hot Naija Jobs</a>
-                                <a href="scholarship.html">Scholarship</a>
-                                <a href="services.html">Consultation</a>
+            class="top-68 justify-items-start py-1 text-start  absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-xl">
+            <nav class="flex min-h-screen flex-col items-start text-start py-4" aria-label="mobile">
+                <ul class="flex min-h-screen flex-col items-start text-start mx-auto  py-2">
+                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="#home"
+                            class="w-full py-1 text-2xl text-center hover:opacity-90">Home</a></li>
+                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="about.html"
+                            class="w-full py-1 text-2xl text-center hover:opacity-90">About</a>
+                    </li>
+                    <li class="text-2xl py-1"><i class="fas fa-arrow-alt-circle-right"></i><a href="events.html"
+                            class="w-full py-1 text-2xl text-center hover:opacity-90">Events</a></li>
+                    <li class="w-full  text-center text-xl hover:opacity-90 dropdown">
+                        <a class="dropbtn hover:opacity-90 mx-1">
+                            <div id="" class="flex text-xl text-start flex-col">
+                                <a class="text-2xl py-1" href="job.html"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Hot Naija Jobs</a>
+                                <a class="text-2xl py-1" href="scholarship.html"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Scholarship</a>
+                                <a class="text-2xl py-1" href="services.html"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Consultation</a>
                             </div>
                         </a>
                     </li>
-                    <li><a href="services.html" class="w-full py-6 text-center hover:opacity-90">Services</a></li>
-                    <li><a href="blog.html" class="w-full py-6 text-center hover:opacity-90">Blog</a></li>
-                    <li><a href="press.html" class="w-full py-6 text-center hover:opacity-90">CareerEdu and the Press</a>
+                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="services.html"
+                            class="w-full py-1 text-2xl text-center hover:opacity-90">Services</a></li>
+                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="blog.html"
+                            class="w-full py-1 text-2xl text-justify hover:opacity-90">Blog</a></li>
+                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="press.html"
+                            class="w-full py-1 text-2xl text-start hover:opacity-90">CareerEdu and
+                            the
+                            Press</a>
                     </li>
-                    <li class="w-full py-6 text-center hover:opacity-90 dropdown"><a href="#relocation"
-                            class="hover:opacity-90 dropbtn">Relocation & Consultation <i
-                                class="fas fa-chevron-down"></i>
-                            <div class="dropdown-content">
-                                <a href="work.html">Relocation to the Uk for work</a>
-                                <a href="study.html">Relocation to the Uk for study</a>
-                                <a href="services.html">Consultation</a>
+                    <li class="w-full text-start text-xl hover:opacity-90">
+                        <a class="hover:opacity-90">
+
+                            <div class="flex flex-col text-2xl">
+                                <a class="text-2xl py-1" href="work.html"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Relocation to the Uk for work</a>
+                                <a class="text-2xl py-1" href="study.html"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Relocation to the Uk for study</a>
+                                <a class="text-2xl text-start py-1" href="services.html"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Consultation</a>
                             </div>
                         </a>
                     </li>
 
-                    <li><a href="contact.html" class="w-full py-6 text-center hover:opacity-90">Contact</a></li>
+                    <li class="text-2xl py-1 mb-3"><i class="fas fa-arrow-alt-circle-right"></i><a href="contact.html"
+                            class="w-full py-1 text-2xl text-center hover:opacity-90">Contact</a></li>
                 </ul>
 
             </nav>
         </section>
     </header>
+
+    <!-- NAVIGATION SECTION ENDS -->
 
     <section
         class="max-h-screen w-full flex flex-col bg-indigo-700 align-middle text-center my-2 text-xl text-white dark:text-slate-400 py-6 justify-between">
