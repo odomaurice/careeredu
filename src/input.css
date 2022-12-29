@@ -7,9 +7,9 @@
         min-height: calc(100vh - 200px)
     }
 
-    .toggle-btn {
+    /* .toggle-btn {
         @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
-    }
+    } */
 
     /* body{
         width: 80%;
@@ -18,7 +18,7 @@
 
          .socials {
             position: relative;
-            margin-top: 9rem;
+            margin-top: 4rem;
         }
     
         .socials .social-icons {
@@ -26,6 +26,8 @@
             margin-bottom: 0;
             list-style: none;
         }
+
+        
     
         .socials .social-icons li {
             display: inline-block;
@@ -33,7 +35,7 @@
         }
     
         .social-icons a {
-            font-size: 2rem;
+            font-size: 1rem;
             display: inline-block;
             line-height: 44px;
             color: #00d9ff;
@@ -41,7 +43,7 @@
             width: 44px;
             height: 44px;
             text-align: center;
-            margin-right: 8px;
+            margin-right: 4px;
             border-radius: 100%;
             -webkit-transition: all 0.2s linear;
             -o-transition: all 0.2s linear;
@@ -74,6 +76,31 @@
         .social-icons a.instagram:hover {
             background-color: #ee00da;
         }
+
+        @media  (max-width: 384px) {
+            .social-icons:first-child a i  {
+                display: flex;
+                flex-flow: row wrap;
+                padding: 0.75rem;
+                margin-right: 2px;
+               
+               
+
+            }
+        }
+
+                /* @media (max-width: 348px) {
+                    .socials .social-icons  {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 0.75rem;
+                        margin-right: 2px;
+        
+        
+        
+                    }
+                } */
     
         /* social icons end */
 
@@ -167,9 +194,9 @@
 
     .slider-btn a {
         padding: 0.75rem;
-        border: 2px solid #fff;
+        border: 2px solid #fff !important;
         border-radius: 15px;
-        color: #fff;
+        color: #fff !important;
         width: 50%;
         text-align: center;
 
@@ -357,44 +384,49 @@
     .footer {
         min-height: auto;
         padding-top: 0;
-        background: rgb(59, 22, 222);
+        margin: 2rem auto;
+        
     }
 
     .footer .box-container {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
+        margin: 2rem auto;
     }
 
     .footer .box-container .box {
-        flex: 1 1 25rem;
-        margin: 2.0rem;
+        flex: 1 1 40%;
+        margin: 2rem;
+        justify-content: center;
+        /* align-items: center; */
         text-align: left;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
 
     .footer .box-container .box h3 {
-        font-size: 1.5rem;
-        color: #fff;
+        font-size: 1.2rem;
+        color: rgb(59, 22, 222);
         padding-bottom: 1rem;
         font-weight: normal;
     }
 
     .footer .box-container .box p {
-        font-size: 1rem;
-        color: #ccc;
+        /* font-size: 1rem; */
+        color: rgb(59, 22, 222);
         padding: 0.7rem 0;
         text-transform: none;
     }
 
     .footer .box-container .box p i {
         padding-right: 1rem;
-        color: #fff;
+        color: rgb(59, 22, 222);
     }
 
     .footer .box-container .box a {
-        font-size: 1.2rem;
-        color: rgb(238, 238, 238);
+        /* font-size: 1.2rem; */
+        color: rgb(59, 22, 222);
         padding: 0.3rem 0;
         display: block;
     }
@@ -418,7 +450,7 @@
         font-size: 1rem;
         margin-right: 1rem;
         transition: 0.2s;
-        background: rgb(230, 230, 230);
+        background: #ccc;
         color: #02094b;
         border: none;
     }
@@ -1203,6 +1235,14 @@
                     backface-visibility: hidden;
                     overflow: hidden
                 }
+
+                                 li a:hover,
+                                 .dropbtn:hover .dropbtn {
+                                     color: indigo;
+                                     text-decoration: none;
+                                     border-bottom: 0.2rem solid indigo;
+                                     padding: 0.5rem rem;
+                                 }
 
 
                                

@@ -12,12 +12,15 @@
     <meta name="a.validate.02" content="bnTb3qC7MY1l2TQLhUmCT-P1hG3EuIZruAWa" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7013821624704351"
         crossorigin="anonymous"></script>
-    <!-- ANIMATE ON SCROLL CSS CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- SITE FAVICON -->
     <link href="assets/images/preg(1).png" rel="icon">
     <link href="assets/images/preg.png" rel="apple-touch-icon">
+
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <title>CareerEdu</title>
 
     <!-- CUSTOM CSS -->
@@ -44,171 +47,243 @@
     <!-- MAIN JS FILE -->
     <script src="js/main.js" defer></script>
 
-    <!-- INTERNAL STYLES FOR DROPDOWN NAV -->
-    <style>
-        /* Dropdown Button */
-        .dropbtn {
-            background-color: transparent;
-            /* color: white; */
-            /* padding: 2px; */
-            /* font-size: 1rem; */
-            border: none;
-            cursor: pointer;
-        }
 
-        /* Dropdown button on hover & focus */
-        .dropbtn:hover,
-        .dropbtn:focus {
-            background-color: transparent;
-        }
-
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            border-radius: 15px;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            color: indigo;
-            padding: 1rem;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        li a:hover,
-        .dropbtn:hover .dropbtn {
-            color: indigo;
-            text-decoration: none;
-            border-bottom: 0.2rem solid indigo;
-            padding: 0.5rem rem;
-        }
-
-
-        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-        .show {
-            display: block;
-        }
-    </style>
 </head>
 
 <body class="min-h-screen w-full bg-slate-50 dark:bg-black dark:text-white font-poppins">
 
     <!-- NAVIGATION SECTION STARTS -->
-    <header class="sticky top-0 z-10 bg-white dark:bg-black text-indigo-700 ">
-        <section
-            class="mx-auto my-auto flex md:flex-col xl:flex-row xl:text-3xl xl:mx-4 max-w-full items-center justify-between p-4">
-            <a href="#hero" class="mx-1"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
-            <div>
-                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
-                    <div
-                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:dark:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:dark:bg-white after:transition-all after:duration-500 after:content-['']">
-                    </div>
-                </button>
-                <nav class="hidden space-x-8 text-base mx-1 font-bold md:block" aria-label="main">
-                    <ul class="flex justify-between text-center mx-auto my-6">
-                        <li class="mx-1"><a href="index.html" class="hover:opacity-90">Home</a></li>
-                        <li class="mx-1"><a href="about.html" class="hover:opacity-90">About</a></li>
-                        <li class="mx-1"><a href="events.html" class="hover:opacity-90">Events</a></li>
-                        <li class="mx-1 dropdown">
-                            <button onclick="myFunction()" class="dropbtn hover:opacity-90 mx-1">Oppurtunities <i
-                                    class="fas fa-chevron-down hover:transition-all"></i></button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="job.html">Hot Naija Jobs</a>
-                                <a href="scholarship.html">Scholarship</a>
-                                <a href="services.html">Consultation</a>
-                            </div>
-                        </li>
 
-                        <li class="mx-1"><a href="services.html" class="hover:opacity-90">Services</a></li>
-                        <li class="mx-1"><a href="blog.html" class="hover:opacity-90">Blog</a></li>
-                        <li class="mx-1"><a href="press.html" class="hover:opacity-90">CareerEdu and the press</a></li>
-                        <li class="mx-1 dropdown">
-                            <button onclick="myFunction2()" class="dropbtn hover:opacity-90 mx-1">Relocation &
-                                Consultation <i class="fas fa-chevron-down hover:transition-all"></i></button>
-                            <div id="myDropdown2" class="dropdown-content">
-                                <a href="work.html">Relocation to the Uk for work</a>
-                                <a href="study.html">Relocation to the Uk for study</a>
-                                <a href="services.html">Consultation</a>
-                            </div>
-                        </li>
-
-                        <li class="mx-1"><a href="contact.html" class="hover:opacity-90">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-
-        <!-- MOBILE NAVBAR -->
-
-        <section id="mobile-menu"
-            class="top-68 justify-items-start py-1 text-start  absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-xl">
-            <nav class="flex min-h-screen flex-col items-start text-start py-4" aria-label="mobile">
-                <ul class="flex min-h-screen flex-col items-start text-start mx-auto  py-2">
-                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="index.html"
-                            class="w-full py-1 text-2xl text-center hover:opacity-90">Home</a></li>
-                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="about.html"
-                            class="w-full py-1 text-2xl text-center hover:opacity-90">About</a>
+    <nav class="navbar sticky-xl-top navbar-expand-lg bg-slate-300 text-black dark:text-slate-300">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
+            <button class="navbar-toggler bg-black dark:bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-black" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 visible text-black dark:text-slate-300">
+                    <li class="nav-item visible text-black dark:text-slate-300">
+                        <a class="nav-link active text-indigo-700 font-bold hover:text-indigo-700" aria-current="page"
+                            href="index.html">Home</a>
                     </li>
-                    <li class="text-2xl py-1"><i class="fas fa-arrow-alt-circle-right"></i><a href="events.html"
-                            class="w-full py-1 text-2xl text-center hover:opacity-90">Events</a></li>
-                    <li class="w-full  text-center text-xl hover:opacity-90 dropdown">
-                        <a class="dropbtn hover:opacity-90 mx-1">
-                            <div id="" class="flex text-xl text-start flex-col">
-                                <a class="text-2xl py-1" href="job.html"><i
-                                        class="fas fa-arrow-alt-circle-right"></i>Hot Naija Jobs</a>
-                                <a class="text-2xl py-1" href="scholarship.html"><i
-                                        class="fas fa-arrow-alt-circle-right"></i>Scholarship</a>
-                                <a class="text-2xl py-1" href="services.html"><i
-                                        class="fas fa-arrow-alt-circle-right"></i>Consultation</a>
-                            </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-indigo-700 font-bold hover:text-indigo-700" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-indigo-700 font-bold hover:text-indigo-700" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-indigo-700 font-bold hover:text-indigo-700" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Oppurtunities
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                                    href="job.html">Hot Naija Jobs</a></li>
+                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                                    href="scholarship.html">Scholarships</a></li>
+                            <li>
+                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                                    href="services.html">Consultations</a></li>
+    
+                        </ul>
                     </li>
-                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="services.html"
-                            class="w-full py-1 text-2xl text-center hover:opacity-90">Services</a></li>
-                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="blog.html"
-                            class="w-full py-1 text-2xl text-justify hover:opacity-90">Blog</a></li>
-                    <li class="py-1 text-2xl"><i class="fas fa-arrow-alt-circle-right"></i><a href="press.html"
-                            class="w-full py-1 text-2xl text-start hover:opacity-90">CareerEdu and
-                            the
-                            Press</a>
+                    <li class="nav-item">
+                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700"
+                            href="services.html">Services</a>
                     </li>
-                    <li class="w-full text-start text-xl hover:opacity-90">
-                        <a class="hover:opacity-90">
-
-                            <div class="flex flex-col text-2xl">
-                                <a class="text-2xl py-1" href="work.html"><i
-                                        class="fas fa-arrow-alt-circle-right"></i>Relocation to the Uk for work</a>
-                                <a class="text-2xl py-1" href="study.html"><i
-                                        class="fas fa-arrow-alt-circle-right"></i>Relocation to the Uk for study</a>
-                                <a class="text-2xl text-start py-1" href="services.html"><i
-                                        class="fas fa-arrow-alt-circle-right"></i>Consultation</a>
-                            </div>
+                    <li class="nav-item">
+                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700" href="press.html">CareerEdu
+                            and the Press</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-indigo-700 font-bold hover:text-indigo-700" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Relocation & Consultation
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                                    href="work.html">Relocation to the Uk for Work</a></li>
+                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                                    href="study.html">Relocation to the Uk for Study</a></li>
+                            <li>
+                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                                    href="services.html">Consultations</a></li>
+    
+                        </ul>
                     </li>
-
-                    <li class="text-2xl py-1 mb-3"><i class="fas fa-arrow-alt-circle-right"></i><a href="contact.html"
-                            class="w-full py-1 text-2xl text-center hover:opacity-90">Contact</a></li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-
-            </nav>
-        </section>
-    </header>
-
+                <!-- <form class="d-flex hidden " role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+            </div>
+        </div>
+    </nav>
+    
+    
     <!-- NAVIGATION SECTION ENDS -->
+
+    <section
+        class="max-h-screen w-full flex flex-col bg-blue align-middle text-center  text-xl text-white dark:text-slate-400 py-6 justify-between">
+        <h3 class="text-2xl pb-3">Scholarships</h3>
+        <p></p>
+    </section>
+    
+    <main class="mx-auto max-w-full px-3">
+        <form class="d-flex mt-3 mx-auto text-end w-full sm:w-1/2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Scholarships" aria-label="Search">
+            <button class="btn btn-outline-dark bg-blue text-white" type="submit">Search</button>
+        </form>
+
+    </main>
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><img src="./assets/images/logo.png" width="250"></h3>
+            <p>
+                1<sup>st</sup> FLoor, <br>
+                North Westgate House, Harlow<br>
+                Essex, CM20 1YS <br><br>
+                <strong>Phone:</strong> +44 786 9467 057<br>
+                <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                    data-cfemail="83eaede5ecc3e0e2f1e6e6f1e6e7f6ade0ecadf6e8">[email&#160;protected]</a><br>
+            </p>
+        </div>
+
+        <div class="box text-base">
+            <h3>Useful links</h3>
+            <a class="text-base hover:text-indigo-500" href="index.html"><i class="fas fa-chevron-circle-right"></i>
+                Home</a>
+            <a href="about.html"><i class="fas fa-chevron-circle-right"></i> About</a>
+            <a href="services.html"><i class="fas fa-chevron-circle-right"></i> Services</a>
+            <a href="terms.html"><i class="fas fa-chevron-circle-right"></i> Terms of Service</a>
+            <a href="policy.html"><i class="fas fa-chevron-circle-right"></i>Privacy Policy</a>
+        </div>
+
+        <div class="box">
+            <h3>Our Services</h3>
+            <p> <a href="/pricing/">Relocation</a></p>
+            <p> <a href="/pricing/">Masterclasses</a></p>
+            <p><a href="/scholarship/">Job Searching</a></p>
+            <p><a href="https://paystack.com/buy/loverrr">LOVERRR - Dating For Career
+                    Professionals</a></p>
+
+            <div class="share text-base">
+
+                <a href="" class="fab fa-linkedin text-base" aria-label="LinkedIn" target="_blank"></a>
+                <a href="" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                <a href="" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+                <a href="" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+            </div>
+
+
+
+        </div>
+        <div class=" p-6 text-blue my-3 text-base mx-3 footer-newsletter">
+            <h4 class="mb-6 text-base">Join Our Newsletter</h4>
+            <p class="px-auto text-base mb-3">Join our Newsletter to receive daily updates on relocation, <br> job
+                opportunities and also career growth</p>
+            <form method="post">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="JrmPZFkPgFUcgsY1xli9gV4Dwxyc9KwUDalyckJtpW6fsYZIvP0AhoubHheGIcUs">
+                <input class="text-slate-700 mb-5  bg-slate-300 text-base p-3 rounded-3xl -mr-6 pr-6 w-64" type="email"
+                    name="email" required><a
+                    class="w-28 more-btn p-3  rounded-3xl bg-indigo-700  justify-start text-xl text-white hover:bg-white hover:text-indigo-500 active:bg-indigo-500 dark:border-none"
+                    href="http://" target="_blank">Subscribe</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-blue text-center text-base mt-3 py-3 mx-3">
+        <div class="copyright">
+            &copy; Copyright <strong><span>CareerEdu</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="https://www.studentshubng.com">The Development Team at StudentsHub.</a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- JQUERY LINK -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- CAROUSEL JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayingTimeout: 1000,
+        // animateIn: "fadeIn",
+        // animateOut: "fadeOut",
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            },
+            1400: {
+                items: 3
+            }
+        }
+    })
+</script>
+
+<!-- CAROUSEL JS ENDS -->
+
+
+
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="./js/purecounter.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+
+
+</body>
+
+</html>
