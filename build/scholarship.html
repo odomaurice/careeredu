@@ -54,7 +54,7 @@
 
     <!-- NAVIGATION SECTION STARTS -->
 
-    <nav class="navbar sticky-xl-top navbar-expand-lg bg-slate-300 text-black dark:text-slate-300">
+    <nav class="navbar sticky-top z-10 navbar-expand-lg bg-slate-300 text-black dark:text-slate-300">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
             <button class="navbar-toggler bg-black dark:bg-white" type="button" data-bs-toggle="collapse"
@@ -149,13 +149,12 @@
 
 
 <!-- footer section starts -->
-<section class="footer">
+<section class="footer justify-between items-start  bg-slate-300  text-blue ml-4">
 
-    <div class="box-container">
-
-        <div class="box">
-            <h3><img src="./assets/images/logo.png" width="250"></h3>
-            <p>
+    <div class="box-container  flex justify-between justify-items-center items-center mx-3">
+        <div class="box text-base text-blue flex flex-col ">
+            <h3 class="text-blue"><img src="./assets/images/logo.png" width="250"></h3>
+            <p class="text-blue">
                 1<sup>st</sup> FLoor, <br>
                 North Westgate House, Harlow<br>
                 Essex, CM20 1YS <br><br>
@@ -165,51 +164,60 @@
             </p>
         </div>
 
-        <div class="box text-base">
-            <h3>Useful links</h3>
-            <a class="text-base hover:text-indigo-500" href="index.html"><i class="fas fa-chevron-circle-right"></i>
+        <div class="flex box text-base flex-col">
+            <h3 class="text-blue text-start">Useful links</h3>
+            <a class="text-base hover:text-indigo-500" href="#home"><i class="fas fa-chevron-circle-right"></i>
                 Home</a>
-            <a href="about.html"><i class="fas fa-chevron-circle-right"></i> About</a>
-            <a href="services.html"><i class="fas fa-chevron-circle-right"></i> Services</a>
-            <a href="terms.html"><i class="fas fa-chevron-circle-right"></i> Terms of Service</a>
-            <a href="policy.html"><i class="fas fa-chevron-circle-right"></i>Privacy Policy</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+            <a href="#services"><i class="fas fa-chevron-circle-right"></i> Services</a>
+            <a href="#education"><i class="fas fa-chevron-circle-right"></i> Terms of Service</a>
+            <a href="#work"><i class="fas fa-chevron-circle-right"></i>Privacy Policy</a>
         </div>
 
-        <div class="box">
-            <h3>Our Services</h3>
+    </div>
+
+    <div class="box-container flex justify-between  text-start items-start">
+        <div class="box flex flex-col text-base footer-newsletter">
+            <h4 class="mb-6 text-lg mx-3 text-start">Join Our Newsletter</h4>
+            <p class=" text-start text-base mb-3">Join our Newsletter to receive daily updates on
+                relocation, <br>
+                job
+                opportunities and also career growth</p>
+            <form class="w-full" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="JrmPZFkPgFUcgsY1xli9gV4Dwxyc9KwUDalyckJtpW6fsYZIvP0AhoubHheGIcUs">
+                <div class="md:flex flex-col m-1">
+                    <input
+                        class="text-slate-700 bg-slate-400 text-base mr-3 sm:mr-6 p-3 rounded-3xl sm:w-72  pr-6 mb-3 w-52"
+                        type="email" name="email" required><br><a
+                        class="w-28  text-start more-btn   p-2  rounded-2xl bg-indigo-700  justify-start text-lg text-white hover:text-indigo-700  dark:border-none"
+                        href="http://" target="_blank">Subscribe</a>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="box flex flex-col text-base">
+            <h3 class="text-lg text-start mx-3">Our Services</h3>
             <p> <a href="/pricing/">Relocation</a></p>
             <p> <a href="/pricing/">Masterclasses</a></p>
             <p><a href="/scholarship/">Job Searching</a></p>
             <p><a href="https://paystack.com/buy/loverrr">LOVERRR - Dating For Career
                     Professionals</a></p>
-
-            <div class="share text-base">
+            <div class="share text-base flex-nowrap">
 
                 <a href="" class="fab fa-linkedin text-base" aria-label="LinkedIn" target="_blank"></a>
                 <a href="" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
                 <a href="" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
                 <a href="" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
             </div>
-
-
-
         </div>
-        <div class=" p-6 text-blue my-3 text-base mx-3 footer-newsletter">
-            <h4 class="mb-6 text-base">Join Our Newsletter</h4>
-            <p class="px-auto text-base mb-3">Join our Newsletter to receive daily updates on relocation, <br> job
-                opportunities and also career growth</p>
-            <form method="post">
-                <input type="hidden" name="csrfmiddlewaretoken"
-                    value="JrmPZFkPgFUcgsY1xli9gV4Dwxyc9KwUDalyckJtpW6fsYZIvP0AhoubHheGIcUs">
-                <input class="text-slate-700 mb-5  bg-slate-300 text-base p-3 rounded-3xl -mr-6 pr-6 w-64" type="email"
-                    name="email" required><a
-                    class="w-28 more-btn p-3  rounded-3xl bg-indigo-700  justify-start text-xl text-white hover:bg-white hover:text-indigo-500 active:bg-indigo-500 dark:border-none"
-                    href="http://" target="_blank">Subscribe</a>
-            </form>
-        </div>
+
+
+
+
     </div>
-
-    <div class="text-blue text-center text-base mt-3 py-3 mx-3">
+    <div class="text-blue bg-slate-300 text-center text-xl mt-3 py-3 mx-3">
         <div class="copyright">
             &copy; Copyright <strong><span>CareerEdu</span></strong>. All Rights Reserved
         </div>
@@ -217,9 +225,7 @@
             Designed by <a href="https://www.studentshubng.com">The Development Team at StudentsHub.</a>
         </div>
     </div>
-
 </section>
-
 
 <!-- JQUERY LINK -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

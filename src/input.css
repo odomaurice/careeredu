@@ -1238,10 +1238,12 @@
 
                                  li a:hover,
                                  .dropbtn:hover .dropbtn {
+                                    background-color: #ddd;
                                      color: indigo;
                                      text-decoration: none;
-                                     border-bottom: 0.2rem solid indigo;
-                                     padding: 0.5rem rem;
+                                     border: 0.2rem solid #ddd;
+                                     border-radius: 15px;
+                                     padding: 0.5rem;
                                  }
 
 
