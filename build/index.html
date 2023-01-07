@@ -69,13 +69,11 @@
         padding: 3rem 10rem;
         line-height: 2;
         text-align: center;
-        color: #fff;
+        color: #000;
         margin-top: 2rem;
 
         font-size: 20px;
-        background-color:#470fb6 ;
-        background-image: -webkit-linear-gradient(70deg, rgb(47, 16, 160) 50%, #470fb6 50%);
-
+       
     }
 
     @media (max-width: 800px) {
@@ -106,7 +104,7 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 visible text-black dark:text-white">
-                    <li class="nav-item visible  dark:text-slate-300">
+                    <li class="nav-item visible">
                         <a class="nav-link active text-slate-900 dark:text-slate-300" aria-current="page"
                             href="index.html">Home</a>
                     </li>
@@ -122,14 +120,14 @@
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Oppurtunities
                         </a>
-                        <ul class="dropdown-menu">
-                            <li class="w-full"><a class="dropdown-item text-slate-50"
-                                    href="job.html">Hot Naija Jobs</a></li>
-                            <li><a class="dropdown-item text-slate-50"
-                                    href="scholarship.html">Scholarships</a></li>
+                        <ul class="dropdown-menu bg-gradient-to-r from-indigo-500  to-purple-500 ...">
+                            <li class="w-full"><a class="dropdown-item text-xl  text-slate-900 dark:text-slate-50"
+                                    href="job.html"> <i class="fas fa-briefcase text-black"></i> Hot Naija Jobs</a></li>
+                            <li><a class="dropdown-item text-slate-900 dark:text-slate-50"
+                                    href="scholarship.html"> <i class="fas fa-book text-black"></i> Scholarships</a></li>
                             <li>
-                            <li><a class="dropdown-item text-slate-50"
-                                    href="services.html">Consultations</a></li>
+                            <li><a class="dropdown-item text-slate-900 dark:text-slate-50"
+                                    href="services.html"> <i class="fas fa-comments text-black"></i> Consultations</a></li>
 
                         </ul>
                     </li>
@@ -143,11 +141,11 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Relocation & Consultation
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-slate-50" href="work.html">Relocation to the Uk for Work</a></li>
-                            <li><a class="dropdown-item text-slate-50" href="study.html">Relocation to the Uk for Study</a></li>
+                        <ul class="dropdown-menu bg-gradient-to-r from-indigo-500  to-purple-500 ...">
+                            <li><a class="dropdown-item text-slate-50" href="work.html"> <i class="fas fa-briefcase-medical"></i> Relocation to the Uk for Work</a></li>
+                            <li><a class="dropdown-item text-slate-50" href="study.html"> <i class="fas fa-graduation-cap"></i> Relocation to the Uk for Study</a></li>
                             <li>
-                            <li><a class="dropdown-item text-slate-50" href="services.html">Consultations</a></li>
+                            <li><a class="dropdown-item text-slate-50" href="services.html"> <i class="fas fa-comment"></i> Consultations</a></li>
                     
                         </ul>
                     <li class="nav-item">
@@ -732,9 +730,9 @@
     <section class="footer justify-between items-start shadow-2xl  bg-slate-50 dark:bg-slate-900  text-blue ml-4">
 
         <div class="box-container  flex justify-between justify-items-center items-center">
-            <div class="box shadow-2xl p-3 text-base  flex flex-col transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:rounded-3xl hover:bg-slate-200 duration-300 ...">
-                <h3 class="text-blue hover:text-white"><img src="./assets/images/logo.png" width="250"></h3>
-                <p class="text-blue hover:text-white">
+            <div class="box  p-3 text-base  flex flex-col">
+                <h3 class="text-black dark:text-white"><img src="./assets/images/logo.png" width="250"></h3>
+                <p class="text-black dark:text-white">
                     1<sup>st</sup> FLoor, <br>
                     North Westgate House, Harlow<br>
                     Essex, CM20 1YS <br><br>
@@ -744,26 +742,40 @@
                 </p>
             </div>
             
-            <div class="flex shadow-2xl p-3 box text-base flex-col transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:rounded-2xl hover:text-white hover:bg-slate-200 duration-300 ...">
-                <h3 class="text-blue hover:text-white text-start">Useful links</h3>
-                <a class="text-base hover:text-indigo-500" href="#home"><i class="fas fa-home"></i>
+            <div class="flex p-3 box text-base flex-col">
+                <h3 class="text-black dark:text-white text-start">Useful links</h3>
+                <a class="text-base text-black dark:text-white" href="#home"><i class="fas fa-home text-indigo-700"></i>
                     Home</a>
-                <a href="#about"><i class="fas fa-user-alt"></i> About</a>
-                <a href="#services"><i class="fas fa-server"></i> Services</a>
-                <a href="#education"><i class="fas fa-clipboard"></i> Terms of Service</a>
-                <a href="#work"><i class="fas fa-user-secret"></i> Privacy Policy</a>
+                <a class="text-black dark:text-white" href="#about"><i class="fas fa-user-alt text-indigo-700"></i> About</a>
+                <a class="text-black dark:text-white" href="#services"><i class="fas fa-server text-indigo-700"></i> Services</a>
+                <a class="text-black dark:text-white" href="#education"><i class="fas fa-clipboard text-indigo-700"></i> Terms of Service</a>
+                <a class="text-black dark:text-white" href="#work"><i class="fas fa-user-secret text-indigo-700"></i> Privacy Policy</a>
+                
+            </div>
+
+            <div class="box flex p-3   flex-col text-base mt-3 ">
+                <h3 class="text-lg text-black dark:text-white text-start mt-6">More Services</h3>
+                
+                <p> <a class="text-black dark:text-white" href="/pricing/"><i class="fas fa-graduation-cap px-1"></i>IELTS Masterclasses</a></p>
+                <p><a class="text-black dark:text-white" href="/scholarship/"><i class="fas fa-user-plus px-1"></i>UK NARIC/ECCTIS Service</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-piggy-bank px-1"></i>Proof Of Fund Service</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-mosque px-1"></i>CareerEdu Oman Service</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-plane px-1"></i>Australian Study Service</a></p>
+               
             </div>
 
         
     
              
-            <div class="box flex p-3 shadow-2xl  flex-col text-base mt-3 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:rounded-3xl  hover:bg-slate-200 duration-300 ...">
-                <h3 class="text-lg text-start mt-6">Our Services</h3>
-                <p><a href=""><i class="fas fa-building px-1"></i>Relocation</a></p>
-                <p> <a href="/pricing/"><i class="fas fa-graduation-cap px-1"></i>Masterclasses</a></p>
-                <p><a href="/scholarship/"><i class="fas fa-search px-1"></i>Job Searching</a></p>
-                <p><a href="https://paystack.com/buy/loverrr"><i class="fas fa-heart px-1"></i>LOVERRR - Dating For Career
-                        Professionals</a></p>
+            <div class="box flex p-3   flex-col text-base mt-3 ">
+                <h3 class="text-lg font-extrabold text-black dark:text-white text-start mt-6">Services</h3>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-building px-1"></i>Relocation</a></p>
+                <p><a class="text-black dark:text-white" href="/scholarship/"><i class="fas fa-search px-1"></i>Job Searching</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-book px-1"></i>Statement of Purpose</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-clipboard-list px-1"></i>CV Optimization and cover letter</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-tags px-1"></i>Premium Master's service(UK)</a></p>
+                <p><a class="text-black dark:text-white" href=""><i class="fas fa-book-medical px-1"></i>Care Jobs Pathway</a></p>
+               
                 <div class="share text-base flex-nowrap">
             
                 <a href="https://www.twitter.com/CareerEdu_" aria-label="Twitter" class="fab fa-twitter"></a>
