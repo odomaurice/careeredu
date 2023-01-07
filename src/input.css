@@ -16,6 +16,23 @@
         overflow: hidden;
     } */
 
+        html {
+           
+            overflow-x: hidden;
+        }
+    
+        html::-webkit-scrollbar {
+            width: 0.8rem;
+        }
+    
+        html::-webkit-scrollbar-track {
+            background: rgb(235, 202, 245);
+        }
+    
+        html::-webkit-scrollbar-thumb {
+            background: #4717F6;
+        }
+
     .socials {
         position: relative;
         margin-top: 4rem;
@@ -88,6 +105,46 @@
 
         }
     }
+
+    @media (min-width: 400px) {
+        .info-pg{
+            margin-bottom: 4rem;
+        }
+
+        .join{
+            max-height: 50%;
+        }
+    }
+
+    @media (max-width: 360px) {
+       .join {
+         height: 100vh;
+         padding-top: 0.5rem;
+
+       }
+       .info-pg-btn{
+        margin-top: 0.5rem;
+       }
+
+
+    }
+
+    .join{
+        max-height: 50vh;
+        margin-top: 2rem ;
+        background-color: rgb(38, 13, 138);
+            background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    }
+
+
+         /* #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        } */
 
     /* @media (max-width: 348px) {
                     .socials .social-icons  {
@@ -194,18 +251,22 @@
 
     .slider-btn a {
         padding: 0.75rem;
-        border: 2px solid #fff !important;
+        border: 2px solid indigo !important;
         border-radius: 15px;
-        color: #fff !important;
         width: 50%;
+        color: indigo !important;
+        background-color: #fff;
         text-align: center;
 
     }
+   
+        
+    
 
     .slider-btn a:hover {
         background-color: indigo;
-        border-color: indigo;
-        color: #fff;
+        border-color: #fff;
+        color: #fff !important;
         transition: all 1s ease-in-out 0.5s;
     }
 
@@ -397,8 +458,8 @@
     }
 
     .footer .box-container .box {
-        flex: 1 1 40%;
-        margin: 2rem;
+        flex: 1 1 30%;
+        margin: 1rem;
         justify-content: center;
         /* align-items: center; */
         text-align: left;
@@ -408,14 +469,14 @@
     .footer .box-container .box h3 {
         font-size: 1.2rem;
         color: rgb(59, 22, 222);
-        padding-bottom: 1rem;
+        padding-bottom: 0.2rem;
         font-weight: normal;
     }
 
     .footer .box-container .box p {
         /* font-size: 1rem; */
         color: rgb(59, 22, 222);
-        padding: 0.7rem 0;
+        padding: 0.2rem 0;
         text-transform: none;
     }
 
@@ -433,6 +494,7 @@
 
     .footer .box-container .box a:hover {
         color: indigo;
+       
     }
 
     .footer .box-container .box .share {
@@ -1240,10 +1302,10 @@
     li a:hover,
     .dropbtn:hover .dropbtn {
 
-        color: indigo;
-        text-decoration: none;
-        border-bottom: 0.2rem solid whitesmoke;
-        padding: 0.5rem;
+        color: indigo !important;
+        text-decoration: none !important;
+        border-bottom: 0.2rem solid indigo !important;
+        padding: 0.5rem !important;
     }
 
    
@@ -2246,7 +2308,7 @@
         }
     }
 
-    #footer {
+    /* #footer {
         color: #37423b;
         font-size: 14px;
         background: #eef0ef
@@ -2273,7 +2335,7 @@
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 0;
-        font-family: raleway, sans-serif;
+       
         color: #777
     }
 
@@ -2384,30 +2446,7 @@
 
     #footer .credits a:hover {
         color: #3f013f
-    }
-
-    #footer .social-links a {
-        font-size: 18px;
-        display: inline-block;
-        background: #643cff;
-        color: #fff;
-        line-height: 1;
-        padding: 8px 0;
-        margin-right: 4px;
-        border-radius: 50%;
-        text-align: center;
-        width: 36px;
-        height: 36px;
-        transition: .3s
-    }
-
-    #footer .social-links a:hover {
-        background: #3f013f;
-        color: #fff;
-        text-decoration: none
-    }
-
-
+    } */
 
 
 }

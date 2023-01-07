@@ -1,6 +1,7 @@
 const initApp = () => {
+ 
 
-!(function () {
+  !(function () {
     "use strict";
     function e(e) {
       try {
@@ -118,17 +119,14 @@ const initApp = () => {
       window.addEventListener("load", toggleBacktotop);
       onscroll(document, toggleBacktotop);
     }
-   
+
     let preloader = select("#preloader");
     if (preloader) {
       window.addEventListener("load", () => {
         preloader.remove();
       });
     }
-   
-   
   })();
-
 }
      
 document.addEventListener("DOMContentLoaded", initApp);

@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-       poppins: "Poppins"
+       Header: "Lato",
+       Body: "Hammersmith One",
+       Default: "Poppins"
     },
 
     colors: {

@@ -31,10 +31,11 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- EXTERNAL FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lato:wght@400;700&family=Poppins&display=swap"
+    rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -52,82 +53,115 @@
     <!-- MAIN JS FILE -->
     <script src="js/main.js" defer></script>
 
+    <style>
+         li a:hover,
+    .dropbtn:hover .dropbtn {
+
+        color: indigo !important;
+        text-decoration: none !important;
+        border-bottom: 0.2rem solid indigo !important;
+        padding: 0.2rem !important;
+        transition: all 0.5s ease-in-out 0.5s;
+    }
+    .dropdown-menu{
+
+        min-width: 100%;
+        padding: 3rem 10rem;
+        line-height: 2;
+        text-align: center;
+        color: #fff;
+        margin-top: 2rem;
+
+        font-size: 20px;
+        background-color:#470fb6 ;
+        background-image: -webkit-linear-gradient(70deg, rgb(47, 16, 160) 50%, #470fb6 50%);
+
+    }
+
+    @media (max-width: 800px) {
+        .dropdown-menu{
+            max-width: 50%;
+            padding: 3rem;
+            font-size: 16px;
+        }
+    }
+    </style>
+
 
 </head>
 
-<body class="min-h-screen w-full bg-slate-50 dark:bg-black dark:text-white font-poppins">
+<body class="min-h-screen w-full  bg-slate-50 dark:bg-black dark:text-white font-Default">
 
     <!-- NAVIGATION SECTION STARTS -->
 
     
 
-    <nav class="navbar sticky-top sticky z-10 navbar-expand-lg bg-slate-300 dark:text-slate-300">
-        <div class="container-fluid">
+    <nav class="navbar  w-full sticky-top sticky z-10 navbar-expand-lg font-Default  bg-slate-50 dark:bg-slate-900">
+        <div class="container-fluid ">
             <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" class="" width="150px"></a>
-            <button class="navbar-toggler text-center fas fa-bars text-xl text-black bg-transparent bg-white" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler  fas fa-bars rounded-full   text-purple-700  " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 visible  dark:text-slate-300">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 visible text-black dark:text-white">
                     <li class="nav-item visible  dark:text-slate-300">
-                        <a class="nav-link active text-indigo-700 font-bold hover:text-indigo-700" aria-current="page"
+                        <a class="nav-link active text-slate-900 dark:text-slate-300" aria-current="page"
                             href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-indigo-700 font-bold hover:text-indigo-700" href="about.html">About</a>
+                        <a class="nav-link text-slate-900 dark:text-slate-300" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-indigo-700 font-bold hover:text-indigo-700"
+                        <a class="nav-link text-slate-900 dark:text-slate-300"
                             href="events.html">Events</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-indigo-700 font-bold hover:text-indigo-700" href="#"
+                        <a class="nav-link dropdown-toggle text-slate-900 dark:text-slate-300" href="#"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Oppurtunities
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                            <li class="w-full"><a class="dropdown-item text-slate-50"
                                     href="job.html">Hot Naija Jobs</a></li>
-                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                            <li><a class="dropdown-item text-slate-50"
                                     href="scholarship.html">Scholarships</a></li>
                             <li>
-                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
+                            <li><a class="dropdown-item text-slate-50"
                                     href="services.html">Consultations</a></li>
 
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700"
+                        <a class="nav-link  text-slate-900 dark:text-slate-300"
                             href="services.html">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700" href="press.html">CareerEdu
-                            and the Press</a>
-                    </li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-indigo-700 font-bold hover:text-indigo-700" href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-slate-900 dark:text-slate-300" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Relocation & Consultation
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
-                                    href="work.html">Relocation to the Uk for Work</a></li>
-                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
-                                    href="study.html">Relocation to the Uk for Study</a></li>
+                            <li><a class="dropdown-item text-slate-50" href="work.html">Relocation to the Uk for Work</a></li>
+                            <li><a class="dropdown-item text-slate-50" href="study.html">Relocation to the Uk for Study</a></li>
                             <li>
-                            <li><a class="dropdown-item text-indigo-700 font-semibold hover:text-indigo-700"
-                                    href="services.html">Consultations</a></li>
-
+                            <li><a class="dropdown-item text-slate-50" href="services.html">Consultations</a></li>
+                    
                         </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-slate-900 dark:text-slate-300" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-slate-900 dark:text-slate-300" href="press.html">CareerEdu
+                            and the Press</a>
+                    </li>
+                    
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  text-indigo-700 font-bold hover:text-indigo-700"
+                        <a class="nav-link text-slate-900 dark:text-slate-300 text-lg"
                             href="contact.html">Contact</a>
                     </li>
                 </ul> 
@@ -141,119 +175,22 @@
 
 
     <!-- NAVIGATION SECTION ENDS -->
+    <!-- <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ -->
 
     <!-- HERO SECTION BEGINS -->
     <section class="text-justify">
-        <!-- Hero Slider -->
-        <div id="home" class="hero-slider owl-carousel owl-theme">
-            <!-- slider 1 begins -->
-            <div class="single-hs-item item-bg1" style="background-image: url('./img/feature_img1.jpg');">
-                <div class="d-table">
-                    <div class="d-tablecell">
-                        <div class="hero-text">
-                            <h3 class="text-start">Trusted Guidance on Your Dream Career and<br>World-Class
-                                Education</h3>
-                            <p class="text-start">We are here to aid you in every possible way</p>
-                            <div class="slider-btn">
-                                <a class="" href="https://www.t.me/CareerEduGlobal">Join out Telegram community</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slider 1 ends -->
-
-            <!-- slider 2 begins -->
-            <div class="single-hs-item item-bg2" style="background-image: url('./img/feature_img2.jpg');">
-                <div class="d-table">
-                    <div class="d-tablecell">
-                        <div class="hero-text">
-                            <h3 class="text-start">Begin Today</h3>
-                            <p class="text-start">The journey of a thousand miles begins with a bold step</p>
-                            <div class="slider-btn">
-                                <a href="https://www.t.me/CareerEduGlobal" class="">Join Our Telegram Community</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider 2 ends -->
-
-            <!-- slider 3 begins -->
-            <div class="single-hs-item item-bg3" style="background-image: url('./img/feature_img3.png');">
-                <div class="d-table">
-                    <div class="d-tablecell">
-                        <div class="hero-text">
-                            <h3 class="text-start">Invest in the Future</h3>
-                            <p class="text-start">We are known for our flexibility and consistency, all geared
-                                towards
-                                providing our clients with maximum satisfaction</p>
-                            <div class="slider-btn">
-                                <a href="https://www.t.me/CareerEduGlobal" class="">Join Our Telegram Community</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider 3 ends -->
-
-            <!-- slider 4 begins -->
-            <div class="single-hs-item item-bg4" style="background-image: url('./img/feature_img4.png');">
-                <div class="d-table">
-                    <div class="d-tablecell">
-                        <div class="hero-text">
-                            <h3 class="text-start">Towards Dream<br>Actualization</h3>
-                            <p class="text-start">Our experts are here for you, to ensure you realize your
-                                potentials</p>
-                            <div class="slider-btn">
-                                <a href="https://www.t.me/CareerEduGlobal" class="">Join our Telegram Community</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider 4 ends -->
-
-            <!-- slider 5 begins -->
-            <div class="single-hs-item item-bg5" style="background-image: url('./img/feature_img5.png');">
-                <div class="d-table">
-                    <div class="d-tablecell">
-                        <div class="hero-text">
-                            <h3 class="text-start">We are Global</h3>
-                            <p class="text-start">We are globally recognized, with good records from world
-                                ivy-league universities. Our institution has made a good name</p>
-                            <div class="slider-btn">
-                                <a href="https://www.t.me/CareerEduGlobal" class="">Join Our Telegram Community</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider 5 ends -->
-
-            <!-- slider 6 begins -->
-            <div class="single-hs-item item-bg6" style="background-image: url('./img/feature_img6.jpg');">
-                <div class="d-table">
-                    <div class="d-tablecell">
-                        <div class="hero-text">
-                            <h3 class="text-start">CARRIER-ORIENTED</h3>
-                            <p class="text-start">As our name implies, we are eager to aid you towards achieving
-                                both short-term and long-term career pursuits.</p>
-                            <div class="slider-btn">
-                                <a href="https://www.t.me/CareerEduGlobal" class="">Join Our Telegram Community</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slider 6 ends -->
-        </div>
-        </div>
-        <!-- End of hero slider -->
+        
     </section>
    
 
@@ -264,55 +201,42 @@
 
 
     <!-- MAIN SECTION BEGINS -->
-    <main class="mx-auto max-w-full px-3 ">
-         <form class="d-flex mx-auto text-end w-full sm:w-1/2" role="search">
+    <main class=" max-w-full px-3 ">
+         <!-- <form class="d-flex mx-auto text-end w-full sm:w-1/2" role="search">
                     <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-dark bg-blue text-white" type="submit">Search</button>
-                    </form> 
+                    </form>  -->
         <!-- first main section -->
         <section id="hero" data-aos="fade-up" data-aos-delay="200"
-            class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-between gap-6 p-6 sm:flex-row">
-            <article class="sm:w-1/2">
+            class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center w-full justify-between font-Header gap-6 p-6 sm:flex-row">
+            <article class=" w-full my-6 font-Default">
                 <h2
-                    class="max-w-md text-start text-3xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-4xl">
-                    Seize Global Opportunities Using CareerEdu
-                    <span class="text-indigo-700 dark:text-indigo-300">We are eager</span>
-                    To be a part of your success...
+                    class="max-w-md text-start font-Default text-3xl font-extrabold text-slate-900 dark:text-slate-300 sm:text-left sm:text-5xl">
+                    Seize Global Opportunities Using 
+                    <span class="text-indigo-700 dark:text-indigo-300">CareerEdu</span>
                 </h2>
-                <p class="mt-4 max-w-md text-start text-lg text-slate-700 dark:text-slate-400 sm:text-left"><i
-                        class="fas fa-check-circle text-indigo-700"></i>
-                    We have an active community of over 35,000 members where we provide FREE guidance on relocation for
-                    work and study.
+                <p class="mt-4 max-w-md text-start sm:text-lg text-base text-slate-700 dark:text-slate-400 sm:text-left">
+                CareerEdu is a launchpad for global opportunities catering to young Africans.
+                As Nigeria's largest opportunities platform, CareerEdu provides scholarships
+                and career guidance, job opportunities for young persons in a bid
+                to prepare them for the global economy.
                 </p>
-                <p class="mt-4 max-w-md text-start text-lg text-slate-700 dark:text-slate-400 sm:text-left"><i
-                        class="fas fa-check-circle text-indigo-700"></i>
-                    We help people explore study and career opportunities in other countries - UK, Canada, US,
-                    Australia, Romania.
-                </p>
-                <p class="mt-4 max-w-md text-start text-lg text-slate-700 dark:text-slate-400 sm:text-left"><i
-                        class="fas fa-check-circle text-indigo-700"></i>
-                    We offer a platform for capacity development. You can learn relevant skills for your career and
-                    improve your chances of
-                    employability both at home and abroad.
-                </p>
+
+                    <div class="slider-btn my-12">
+                    <a class="" href="https://www.t.me/CareerEduGlobal">Join our <span class="hidden sm:visible">Telegram</span>  community <i class="fas fa-arrow-right"></i> </a></div>
+                
+               
 
             </article>
-
-            <img class="w-full sm:w-1/2" src="./assets/images/hug.jpeg" alt="hug" />
+           
+            <img class="w-full sm:w-1/2" src="./img/hero.svg" alt="hug" />
         </section>
 
         <!-- first main section ends -->
 
         <hr class="mx-auto w-1/2 bg-slate-300" />
 
-        <!-- typingtext section -->
-
-        <p data-aos="zoom-in class="text-xl text-start w-full text-indigo-700 mx-4 my-4"> Great feats we
-            have achieved so far :
-            <span class="typing-text"></span>
-        </p>
-
-        <!-- typingtext section ends -->
+       
 
         <!-- counter section -->
 
@@ -348,83 +272,137 @@
 
         <hr class="mx-auto w-1/2 bg-slate-300" />
 
-
-
-
-        <!--first info section -->
-        <section data-aos="fade-down" data-aos-delay="200"
-            class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-4 w-full sm:text-base">
-            <h2 class="mb-6 text-start text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-                Why Choose CareerEdu?
-            </h2>
-            <ul
-                class="mx-auto my-12 flex list-none flex-col items-center justify-between align-middle gap-8 lg:flex-row lg:text-2xl sm:text-base">
-                <li data-aos="fade-up" data-aos-delay="200"
-                    class="flex w-full flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-1 shadow-xl  dark:border-gray-100 dark:bg-black sm:w-5/6 sm:text-base">
-                    <img src="./assets/images/preg.png" alt="Explorer" class="mb-6 w-1/2 md:w-32 text-start" />
-
-
-                    <p
-                        class="mt-2 md:text-xl lg:text-base  text-center sm:text-base text-slate-500 px-2">
-                        CareerEdu is a launchpad for global opportunities catering to young Africans. As Nigeria's
-                        largest opportunities
-                        platform, CareerEdu provides scholarships and career guidance, job opportunities for young
-                        persons in a bid to prepare
-                        them for the global economy.
-                    </p>
-                     <a href=" https://www.t.me/CareerEduServices" class="w-32 text-center more-btn rounded-xl mt-3 border border-solid border-slate-900 bg-indigo-700 p-2 text-white  hover:bg-indigo-500 active:bg-indigo-500 dark:border-none" target="_blank" rel="noopener noreferrer">Learn More</a>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="200"
-                    class="flex w-full flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-1 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 sm:text-base">
-                    <img src="./assets/images/connections.png" alt="Adventurer" class="mb-6 w-1/2 md:w-32" />
-                    <h3 class="text-center text-2xl text-slate-900 dark:text-slate-700">
-                        Massive Community
-                    </h3>
-
-                    <p
-                        class="mt-2 md:text-2xl lg:text-base text-center sm:text-base text-slate-500 ">
-                        CareerEdu is the first platform to provide scholarship and career guidance to young Africans for
-                        FREE. It is also one of
-                        Africa's largest opportunities platforms with over 26,000 active members daily.
-                    </p>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="300"
-                    class="flex w-full flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-1 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 sm:text-base">
-                    <img src="./assets/images/trophy.png" alt="Infinity" class="mb-6 w-1/2 md:w-32" />
-                    <h3 class="text-center text-2xl text-slate-900 dark:text-slate-900">
-                        Huge Achievements
-                    </h3>
-
-                    <p
-                        class="mt-2  md:text-2xl lg:text-base text-center sm:text-base text-slate-500">
-                        In 2021 alone, CareerEdu helped over 400 persons relocate for studies and work to the United
-                        Kingdom. In 2022, that
-                        number is set to double.
-                    </p>
-                </li>
-
-                <li data-aos="fade-up" data-aos-delay="300"
-                    class="flex w-full flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-1 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 sm:text-base">
-                    <img src="./assets/images/suitcase.png" alt="Infinity" class="mb-6 w-1/2 sm:w-32" />
-                    <h3 class="text-center text-2xl text-slate-900 dark:text-slate-700">
-                        Job Oppurtunities
-                    </h3>
-
-                    <p
-                        class="mt-2 md:text-2xl lg:text-base text-center sm:text-base text-slate-500">
-                        CareerEdu provides new job vacancies from all over Nigeria every single day to enable young
-                        persons apply for and get
-                        these jobs. CareerEdu also organises Career and Mentorship events where young people meet
-                        outstanding individuals with
-                        blossoming careers to learn the secrets of their success.
-                    </p>
-                </li>
-            </ul>
+        <h2 class="mb-6 text-center my-6 text-4xl font-bold text-slate-900 dark:text-white sm:text-4xl">
+            Why Choose CareerEdu?
+        </h2>
+        <section id="about" data-aos="fade-down" data-aos-delay="200"
+            class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center  justify-center gap-8 p-6 sm:flex-row shadow-2xl">
+            
+            <article class="sm:w-1/2 bg-indigo-600  rounded-3xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-700 duration-300 ...">
+                <p class="max-w-md text-start sm:text-center text-lg  p-3 font-sans   text-slate-50 sm:text-xl">
+                    CareerEdu is a launchpad for global opportunities catering to young Africans. As Nigeria's
+                    largest opportunities
+                    platform, CareerEdu provides scholarships and career guidance, job opportunities for young
+                    persons in a bid to prepare
+                    them for the global economy.
+                   
+                </p> <br>
+                
+            </article>
+            <img class="w-full sm:w-1/3" src="./img/hero2.svg" alt="Rocket Dab" />
         </section>
 
-        <hr class="mx-auto w-1/2 bg-slate-300" />
+        <section id="about" data-aos="fade-down" data-aos-delay="200"
+            class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center  justify-center gap-8 p-6 sm:flex-row-reverse shadow-2xl">
+        
+            <article class="sm:w-1/2 bg-indigo-700 rounded-3xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 duration-300 ...">
+                <h3 class="max-w-md text-start sm:text-center text-2xl my-4 font-Header mx-3   text-slate-50 sm:text-3xl">Massive Community</h3>
+                <p class="max-w-md text-start sm:text-center text-xl mx-3   text-slate-50  sm:text-xl">
+                    CareerEdu is the first platform to provide scholarship and career guidance to young Africans for
+                    FREE. It is also one of
+                    Africa's largest opportunities platforms with over 26,000 active members daily.
+                    
+        
+                </p> <br>
+                
+            </article>
+            <img class="w-full sm:w-1/3" src="./img/undraw_lives_matter_38lv.svg" alt="Rocket Dab" />
+        </section>
 
-        <!-- first info section ends -->
+        <section id="about" data-aos="fade-up" data-aos-delay="200"
+            class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center  justify-center gap-8 p-6 sm:flex-row shadow-2xl">
+        
+            <article class="sm:w-1/2 bg-indigo-700 rounded-xl transition ease-in-out delay-150 bg-blue-600 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                <h3 class="max-w-md text-start text-2xl my-4 font-Header mx-3   text-slate-50 sm:text-left sm:text-3xl">Huge Achievements</h3>
+                <p class="max-w-md text-start text-xl mx-3   text-slate-50 sm:text-left sm:text-xl">
+                    In 2021 alone, CareerEdu helped over 400 persons relocate for studies and work to the United
+                    Kingdom. In 2022, that
+                    number is set to double.
+                    
+        
+        
+                </p> <br>
+        
+            </article>
+            <img class="w-full sm:w-1/3" src="./img/undraw_winners_re_wr1l.svg" alt="Rocket Dab" />
+        </section>
+
+        <section id="about" data-aos="fade-up" data-aos-delay="200"
+            class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center  justify-center gap-8 p-6 sm:flex-row-reverse shadow-2xl">
+        
+            <article class="sm:w-1/2 bg-indigo-700 rounded-xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 duration-300 ...">
+                <h3 class="max-w-md text-start text-2xl my-4 font-Header mx-3   text-slate-50 sm:text-left sm:text-3xl">Job Oppurtunities</h3>
+                <p class="max-w-md text-start text-xl mx-3 font-Header   text-slate-50 sm:text-left sm:text-xl">
+                    CareerEdu provides new job vacancies from all over Nigeria every single day to enable young
+                    persons apply for and get
+                    these jobs. CareerEdu also organises Career and Mentorship events where young people meet
+                    outstanding individuals with
+                    blossoming careers to learn the secrets of their success.
+        
+        
+        
+                </p> <br>
+        
+            </article>
+            <img class="w-full sm:w-1/3" src="./img/undraw_updated_resume_re_7r9j.svg" alt="Rocket Dab" />
+        </section>
+        
+        <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+        <section 
+            class="widescreen:section-min-height items-center text-center tallscreen:section-min-height my-12 scroll-mt-20 p-4 w-full shadow-3xl sm:text-base">
+            <div id="particles-js"></div>
+            <div   class=" join p-6  sm:p-4   shadow-3xl w-full sm:max-w-4xl mx-auto  bg-indigo-700 rounded-3xl">
+                <h3 class="text-2xl mt-1 text-center sm:text-4xl py-3 font-bold text-white">JOIN THE CAREEREDU COMMUNITY</h3>
+                <p class="text-xl px-3 text-center mt-1 sm:text-2xl text-white info-pg">Enter your mail to stay in-touch with the latest news and releases from us.</p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="rounded-3xl info-pg-btn mb-6 mt-1 sm:mt-12 p-2 sm:p-3 w-full sm:w-1/3  bg-indigo-600 text-lg sm:text-xl text-white hover:bg-indigo-500 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Subscribe <i class="fa fa-paper-plane hover:translate-x-3"></i>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-slate-50 dark:bg-slate-900">
+                        <div class="modal-header">
+                            <h1 class="modal-title font-bold text-3xl" id="exampleModalLabel">What's New with CareerEdu?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/images/logo.png" class="w-1/3 mx-auto" width="30%" alt="">
+                            <img src="./img/undraw_faq_re_31cw.svg" class="w-1/2 mx-auto" width="60%" alt="">
+
+                            <h3 class="text-xl text-indigo-600 my-4">Enter Your Email to Get New Updates</h3>
+
+                            <input type="email" id="subject" name="email" required minlength="3" maxlength="60" placeholder="Your Email"
+                                class="w-full  rounded-xl  border border-solid border-slate-900 p-2 text-2xl text-black dark:border-none sm:text-xl" /><button
+                                    class="w-48 rounded-xl mt-2 border border-solid border-slate-900 bg-indigo-700 p-2 text-white text-xl hover:bg-indigo-600 active:bg-teal-500 dark:border-none">
+                                    Subscribe
+                                </button>
+
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bg-indigo-700" data-bs-dismiss="modal">Close</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+                
+
+            </div>
+        
+           
+                </section>
+
+
+
+
+       
 
 
         <!-- 2nd info section starts -->
@@ -751,12 +729,12 @@
     <!-- MAIN SECTION ENDS -->
 
     <!-- footer section starts -->
-    <section class="footer justify-between items-start  bg-slate-300  text-blue ml-4">
+    <section class="footer justify-between items-start shadow-2xl  bg-slate-50 dark:bg-slate-900  text-blue ml-4">
 
-        <div class="box-container  flex justify-between justify-items-center items-center mx-3">
-            <div class="box text-base text-blue flex flex-col ">
-                <h3 class="text-blue"><img src="./assets/images/logo.png" width="250"></h3>
-                <p class="text-blue">
+        <div class="box-container  flex justify-between justify-items-center items-center">
+            <div class="box shadow-2xl p-3 text-base  flex flex-col transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:rounded-3xl hover:bg-slate-200 duration-300 ...">
+                <h3 class="text-blue hover:text-white"><img src="./assets/images/logo.png" width="250"></h3>
+                <p class="text-blue hover:text-white">
                     1<sup>st</sup> FLoor, <br>
                     North Westgate House, Harlow<br>
                     Essex, CM20 1YS <br><br>
@@ -766,44 +744,25 @@
                 </p>
             </div>
             
-            <div class="flex box text-base flex-col">
-                <h3 class="text-blue text-start">Useful links</h3>
-                <a class="text-base hover:text-indigo-500" href="#home"><i class="fas fa-chevron-circle-right"></i>
+            <div class="flex shadow-2xl p-3 box text-base flex-col transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:rounded-2xl hover:text-white hover:bg-slate-200 duration-300 ...">
+                <h3 class="text-blue hover:text-white text-start">Useful links</h3>
+                <a class="text-base hover:text-indigo-500" href="#home"><i class="fas fa-home"></i>
                     Home</a>
-                <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
-                <a href="#services"><i class="fas fa-chevron-circle-right"></i> Services</a>
-                <a href="#education"><i class="fas fa-chevron-circle-right"></i> Terms of Service</a>
-                <a href="#work"><i class="fas fa-chevron-circle-right"></i>Privacy Policy</a>
+                <a href="#about"><i class="fas fa-user-alt"></i> About</a>
+                <a href="#services"><i class="fas fa-server"></i> Services</a>
+                <a href="#education"><i class="fas fa-clipboard"></i> Terms of Service</a>
+                <a href="#work"><i class="fas fa-user-secret"></i> Privacy Policy</a>
             </div>
 
-        </div>
+        
     
-             <div class="box-container flex justify-between  text-start items-start">
-                <div class="box flex flex-col text-base footer-newsletter">
-                    <h4 class="mb-6 text-lg mx-3 sm:mx-1 text-start">Join Our Newsletter</h4>
-                    <p class=" text-start text-base mb-3">Join our Newsletter to receive daily updates on
-                        relocation, <br>
-                        job
-                        opportunities and also career growth</p>
-                    <form class="w-full" method="post">
-                        <input type="hidden" name="csrfmiddlewaretoken"
-                            value="JrmPZFkPgFUcgsY1xli9gV4Dwxyc9KwUDalyckJtpW6fsYZIvP0AhoubHheGIcUs">
-                        <div class="md:flex flex-col m-1">
-                            <input class="text-slate-700 bg-slate-400 text-base mr-3 sm:mr-6 p-3 rounded-3xl sm:w-72  pr-6 mb-3 w-52" type="email"
-                                name="email" placeholder="Your Email" required><br><a
-                                class="w-28  text-start more-btn   p-2  rounded-2xl bg-indigo-700  justify-start text-lg text-white hover:text-indigo-700  dark:border-none"
-                                href="http://" target="_blank">Subscribe</a>
-                        </div>
-                
-                    </form> 
-                    
-            </div> 
-            <div class="box flex flex-col text-base">
-                <h3 class="text-lg text-start sm:mx-auto mx-3">Our Services</h3>
-                <p> <a href="/pricing/">Relocation</a></p>
-                <p> <a href="/pricing/">Masterclasses</a></p>
-                <p><a href="/scholarship/">Job Searching</a></p>
-                <p><a href="https://paystack.com/buy/loverrr">LOVERRR - Dating For Career
+             
+            <div class="box flex p-3 shadow-2xl  flex-col text-base mt-3 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:rounded-3xl  hover:bg-slate-200 duration-300 ...">
+                <h3 class="text-lg text-start mt-6">Our Services</h3>
+                <p><a href=""><i class="fas fa-building px-1"></i>Relocation</a></p>
+                <p> <a href="/pricing/"><i class="fas fa-graduation-cap px-1"></i>Masterclasses</a></p>
+                <p><a href="/scholarship/"><i class="fas fa-search px-1"></i>Job Searching</a></p>
+                <p><a href="https://paystack.com/buy/loverrr"><i class="fas fa-heart px-1"></i>LOVERRR - Dating For Career
                         Professionals</a></p>
                 <div class="share text-base flex-nowrap">
             
@@ -817,9 +776,9 @@
 
                
 
-           
-             </div> 
-             <div class="text-blue bg-slate-300 text-center text-xl mt-3 py-3 mx-3">
+             </div>
+             
+             <div class="text-blue  text-center text-xl mt-3 py-3 mx-3">
             <div class="copyright">
                 &copy; Copyright <strong><span>CareerEdu</span></strong>. All Rights Reserved
             </div>
@@ -829,10 +788,7 @@
         </div>
          </section>
 
-       
-
-   
-
+        
     <!-- JQUERY LINK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -891,6 +847,12 @@
 
     <!-- PURECOUNTER JS -->
     <script src="./js/purecounter.js"></script>
+
+    <!-- <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script> -->
+
+    <script src="./js/ads.js"></script>
+
 
 
     <!-- scroll top btn -->
